@@ -16,5 +16,5 @@ interface WeatherService {
 
     fun retrieveAllSavedLocations() : List<Location>
 
-    fun subscribeToLiveUpdatesStream() : Boolean
+    fun subscribeToLiveUpdatesStream()
 }

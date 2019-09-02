@@ -40,7 +40,7 @@ class WeatherUseCaseTest: SubjectSpek<WeatherUseCase>({
 
             println("I. a) Actioning live update test for old devices")
 
-            subject.requestLiveUpdates()
+            subject.setupLiveUpdates()
 
             it("should not turn on live updates"){
                 println("I. b) Testing the results of the live update test for old devices")
@@ -71,7 +71,7 @@ class WeatherUseCaseTest: SubjectSpek<WeatherUseCase>({
         on("attempting to turn on live updates"){
             println("II. a) Actioning live update test for new devices")
 
-            subject.requestLiveUpdates()
+            subject.setupLiveUpdates()
 
             it("should turn on live updates"){
                 println("II. b) Testing the results of the live update test for new devices")

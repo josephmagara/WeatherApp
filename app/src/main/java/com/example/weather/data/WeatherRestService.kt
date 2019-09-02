@@ -19,5 +19,5 @@ class WeatherRestService : WeatherService {
 
     override fun setPreferredLocation(location: Location) {}
 
-    override fun subscribeToLiveUpdatesStream() : Boolean = true
+    override fun subscribeToLiveUpdatesStream() {}
 }
